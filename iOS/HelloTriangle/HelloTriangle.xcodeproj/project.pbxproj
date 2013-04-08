@@ -69,7 +69,6 @@
 		0C35F9EF1710672700A1B1CB = {
 			isa = PBXGroup;
 			children = (
-				0C35FA221710682F00A1B1CB /* QuartzCore.framework */,
 				0C35FA011710672700A1B1CB /* HelloTriangle */,
 				0C35F9FA1710672700A1B1CB /* Frameworks */,
 				0C35F9F91710672700A1B1CB /* Products */,
@@ -87,6 +86,7 @@
 		0C35F9FA1710672700A1B1CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C35FA221710682F00A1B1CB /* QuartzCore.framework */,
 				0C35FA1E171067AB00A1B1CB /* OpenGLES.framework */,
 				0C35F9FB1710672700A1B1CB /* UIKit.framework */,
 				0C35F9FD1710672700A1B1CB /* Foundation.framework */,

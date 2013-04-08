@@ -18,6 +18,12 @@
 		0C389E571712C1BF00876B12 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C389E561712C1BF00876B12 /* Default-568h@2x.png */; };
 		0C389E5A1712C1BF00876B12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C389E591712C1BF00876B12 /* ViewController.m */; };
 		0C389E5D1712C1BF00876B12 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C389E5B1712C1BF00876B12 /* ViewController.xib */; };
+		0C389E671712C1E800876B12 /* FragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 0C389E631712C1E800876B12 /* FragmentShader.glsl */; };
+		0C389E681712C1E800876B12 /* Shaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C389E651712C1E800876B12 /* Shaders.m */; };
+		0C389E691712C1E800876B12 /* VertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 0C389E661712C1E800876B12 /* VertexShader.glsl */; };
+		0C389E6B1712C21A00876B12 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C389E6A1712C21A00876B12 /* OpenGLES.framework */; };
+		0C389E6D1712C22300876B12 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C389E6C1712C22300876B12 /* QuartzCore.framework */; };
+		0C389E701712C29300876B12 /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C389E6E1712C29300876B12 /* matrix.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,14 @@
 		0C389E581712C1BF00876B12 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0C389E591712C1BF00876B12 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0C389E5C1712C1BF00876B12 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		0C389E631712C1E800876B12 /* FragmentShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; path = FragmentShader.glsl; sourceTree = "<group>"; };
+		0C389E641712C1E800876B12 /* Shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shaders.h; sourceTree = "<group>"; };
+		0C389E651712C1E800876B12 /* Shaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shaders.m; sourceTree = "<group>"; };
+		0C389E661712C1E800876B12 /* VertexShader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; path = VertexShader.glsl; sourceTree = "<group>"; };
+		0C389E6A1712C21A00876B12 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0C389E6C1712C22300876B12 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0C389E6E1712C29300876B12 /* matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrix.c; sourceTree = "<group>"; };
+		0C389E6F1712C29300876B12 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C389E6D1712C22300876B12 /* QuartzCore.framework in Frameworks */,
+				0C389E6B1712C21A00876B12 /* OpenGLES.framework in Frameworks */,
 				0C389E411712C1BF00876B12 /* UIKit.framework in Frameworks */,
 				0C389E431712C1BF00876B12 /* Foundation.framework in Frameworks */,
 				0C389E451712C1BF00876B12 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +89,8 @@
 		0C389E3F1712C1BF00876B12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C389E6C1712C22300876B12 /* QuartzCore.framework */,
+				0C389E6A1712C21A00876B12 /* OpenGLES.framework */,
 				0C389E401712C1BF00876B12 /* UIKit.framework */,
 				0C389E421712C1BF00876B12 /* Foundation.framework */,
 				0C389E441712C1BF00876B12 /* CoreGraphics.framework */,
@@ -83,6 +101,12 @@
 		0C389E461712C1BF00876B12 /* ColorTriangle */ = {
 			isa = PBXGroup;
 			children = (
+				0C389E661712C1E800876B12 /* VertexShader.glsl */,
+				0C389E631712C1E800876B12 /* FragmentShader.glsl */,
+				0C389E641712C1E800876B12 /* Shaders.h */,
+				0C389E651712C1E800876B12 /* Shaders.m */,
+				0C389E6E1712C29300876B12 /* matrix.c */,
+				0C389E6F1712C29300876B12 /* matrix.h */,
 				0C389E4F1712C1BF00876B12 /* AppDelegate.h */,
 				0C389E501712C1BF00876B12 /* AppDelegate.m */,
 				0C389E581712C1BF00876B12 /* ViewController.h */,
@@ -163,6 +187,8 @@
 				0C389E551712C1BF00876B12 /* Default@2x.png in Resources */,
 				0C389E571712C1BF00876B12 /* Default-568h@2x.png in Resources */,
 				0C389E5D1712C1BF00876B12 /* ViewController.xib in Resources */,
+				0C389E671712C1E800876B12 /* FragmentShader.glsl in Resources */,
+				0C389E691712C1E800876B12 /* VertexShader.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +202,8 @@
 				0C389E4D1712C1BF00876B12 /* main.m in Sources */,
 				0C389E511712C1BF00876B12 /* AppDelegate.m in Sources */,
 				0C389E5A1712C1BF00876B12 /* ViewController.m in Sources */,
+				0C389E681712C1E800876B12 /* Shaders.m in Sources */,
+				0C389E701712C29300876B12 /* matrix.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
