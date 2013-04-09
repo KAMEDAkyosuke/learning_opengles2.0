@@ -29,14 +29,14 @@ enum {
 };
 
 typedef struct {
-    GLfloat Position[4];
-    GLfloat Color[4];
+    GLfloat Position[3];
+    GLubyte Color[4];
 } Vertex;
 
 const Vertex Vertices[] = {
-    {{ 0.0f,  1.0f,  0.0f}, { 1.0f, 0.0f, 0.0f, 1.0f}},
-    {{-1.0f, -1.0f,  0.0f}, { 0.0f, 1.0f, 0.0f, 1.0f}},
-    {{ 1.0f, -1.0f,  0.0f}, { 0.0f, 0.0f, 1.0f, 1.0f}}
+    {{ 0.0f,  1.0f,  0.0f}, { 255, 0, 0, 255}},
+    {{-1.0f, -1.0f,  0.0f}, { 0, 255, 0, 255}},
+    {{ 1.0f, -1.0f,  0.0f}, { 0, 0, 255, 255}}
 };
 
 const GLubyte Indices[] = {
@@ -216,7 +216,7 @@ const GLubyte Indices[] = {
     glVertexAttribPointer(ATTRIB_VERTEX_POSITION, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), 0);
 	glEnableVertexAttribArray(ATTRIB_VERTEX_POSITION);
     
-    glVertexAttribPointer(ATTRIB_VERTEX_COLOR, 4, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void *)(sizeof(GLfloat) * 4));
+    glVertexAttribPointer(ATTRIB_VERTEX_COLOR, 4, GL_UNSIGNED_BYTE, GL_FALSE, sizeof(Vertex), (void *)(sizeof(GLfloat) * 3));
     glEnableVertexAttribArray(ATTRIB_VERTEX_COLOR);
 
     glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_BYTE, 0);
